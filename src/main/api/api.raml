@@ -1,0 +1,35 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/91df4e9d-94e4-4e4b-ae53-8819ae44490a
+title: Ms3_project
+version: 1.0
+protocols: [HTTP,HTTPS]
+mediaType: application/json
+
+  
+/ms3:
+  displayName: MS3 
+  get:
+   queryParameters: 
+    lowerNumber : 
+     type: integer
+     minimum: 1
+     maximum: 200
+    higherNumber : 
+     type: integer
+     minimum: 1
+     maximum: 200
+   responses:
+       200:
+        body:
+          application/json:
+       400:
+         body:
+           application/json:
+       500:
+        body:
+          application/json:
+             
+    
+        
+      
+   
